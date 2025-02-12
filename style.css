@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    position: fixed;
+    .slide:nth-child(1) { animation-delay: -1s; background: url('pexels-criativithy-894081-1805411.jpg') center/cover no-repeat; }
+    .slide:nth-child(2) { animation-delay: 4s; background: url('pexels-enginakyurt-19995389.jpg') center/cover no-repeat; }
+    .slide:nth-child(3) { animation-delay: 8s; background: url('pexels-gabby-k-7691227.jpg') center/cover no-repeat; }
+}
+
+@keyframes fade {
+    0% { opacity: 0; }
+    25% { opacity: 1; }
+    50% { opacity: 1; }
+    75% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+.slideshow-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    float: left;
+    line-height: 8rem;
+    color: black;
+    font-size: 6rem;
+    padding-top: 15%;
+    padding-left: 2%;
+    padding-right: 60%;
+    text-align: left;
+    opacity: 0;
+    animation: fade 12s infinite;
+    flex-direction: column;
+}
+
+.slide button {
+    margin-top: 20px;
+    margin-right: 75rem;
+    padding: 20px 30px;
+    font-size: 18px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    text-align: left;
+}
+
+.slide button:hover {
+    background-color: rgb(218, 85, 158);
+}
+
+ul {
+    display: flex;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+li {
+   margin-top: 2.5rem;
+    margin-left: 2rem;
+    font-size: 1.1rem;
+}
+
+li :hover {
+    text-decoration: underline;
+}
+
+.kloths li {
+    margin-bottom: 4rem;
+    margin-left: 6rem;
+    font-size: 2rem;
+}
+
+
